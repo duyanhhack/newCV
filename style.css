@@ -1,0 +1,251 @@
+html {
+     scroll-behavior: smooth;
+}
+body {
+     padding: 0;
+     margin: 0;
+     background: #FFF;
+     font-family: 'Libre Franklin', sans-serif;
+}
+.text-capitalize {
+     text-transform: capitalize !important;
+ }
+.navbar {
+     margin-bottom: 0;
+     background-color: #3369e7;
+     z-index: 99;
+     border: 0;
+     font-size: 17px !important;
+     border-radius: 0;
+}
+.navbar li a, .navbar .navbar-brand {
+     color: white !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+     color: #3369e7 !important;
+     border-radius: 3px;
+     background-color: white !important;
+}
+.navbar-default .navbar-toggle {
+     border-color: transparent;
+     color: white;
+}
+.navbar-toggle {
+     margin-right: 30px;
+     font-size: 18px;
+}
+.container {
+     padding: 0;
+}
+.big-bg {
+     background: #3369e7;
+     z-index: -1;
+}
+.navbar-brand {
+     padding: 15px 0;
+     line-height: 35px;
+}
+.navbar-brand ul {
+     display: flex;
+     list-style: none;
+}
+.navbar-brand ul li {
+     text-align: center;
+     letter-spacing: 15px;
+     font-size: 17px;
+}
+.navbar-right {
+     margin-right: 0px;
+}
+.nav li {
+     padding: 5px 2px;
+}
+.logo{
+     margin: 100px 0 50px 0;
+     color: white;
+}
+.banner {
+     height: 600px;
+     background-image:url(./banner.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+}
+.banner::before {
+     content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background: #000;
+}
+.btn-read {
+     border: 2px solid white;
+     color: white;
+     background: none;
+     font-size: 17px;
+     border-radius: 0;
+     padding: 6px 13px;
+}
+.banner-info {
+     position: absolute;
+     max-width: 65%;
+     color: white;
+     top: 100px;
+     left: 120px;
+}
+.myImage img {
+     width: 100%;
+     border-radius: 3px;
+}
+.mix-1 {
+     padding: 64px 80px;
+     background: white;
+}
+.mix-2{
+     padding: 64px 80px;
+     background: #f8f9fa;
+}
+.mix h2.heading {
+     margin-bottom: 50px !important;
+}
+h2.heading {
+     font-size: 36px;
+     color: #000;
+     font-weight: 100;
+}
+.banner-info h2.heading {
+     font-size: 45px;
+     color: white;
+}
+.banner-info span {
+     font-size: 37px;
+}
+p {
+     font-size: 16px;
+     line-height: 1.9;
+     color: #707579;
+}
+.banner-info p {
+     color: white;
+     padding: 25px 0 15px;
+}
+#services .thumbnail {
+     padding: 35px;
+}
+.service-icon {
+     font-size: 50px;
+     color: #3369e7;
+}
+.skill-icon {
+     margin-top: 30px;
+     font-size: 80px;
+     display: flex;
+     justify-content: space-around;
+}
+.skill-icon .html {
+     color:orangered;
+}
+.skill-icon .css {
+     color: #007bff;
+}
+.skill-icon .javascript {
+     color: gold;
+}
+.skill-icon .vue {
+     color: #28a745;
+}
+.skill-progress #html::after {
+     content: " - 99%";
+}
+.skill-progress #css::after {
+     content: " - 90%";
+}
+.skill-progress #js::after {
+     content: " - 69%";
+}
+.skill-progress #vue::after {
+     content: " - 30%";
+}
+.progress {
+     height: 10px;
+}
+#contact p {
+     font-size: 17px;
+}
+@media (max-width: 992px){
+     .myImage {
+          margin: 20px 0;
+     }
+     div.skill-icon {
+          display: none;
+     }
+     div.skill-progress {
+          margin-top: 25px;
+     }
+     .skill-progress h5 {
+          font-size: 18px;
+     }
+     .skill-progress #html::before {
+          content: "\f13b";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: 300;
+          color: orangered;
+          margin:0px 5px 0px 0px;
+     }
+     .skill-progress #css::before {
+          content: "\f38b";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: 300;
+          color: #007bff;
+          margin:0px 5px 0px 0px;
+     }
+     .skill-progress #js::before {
+          content: "\f3b9";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: 300;
+          color: gold;
+          margin:0px 5px 0px 0px;
+     }
+     .skill-progress #vue::before {
+          content: "\f41f";
+          font-family: FontAwesome;
+          font-weight: normal;
+          font-style: 300;
+          color: #28a745;
+          margin:0px 5px 0px 0px;
+     }
+}
+@media (max-width: 768px){
+     .logo h1 {
+          font-size: 25px;
+     }
+     .banner-info {
+          top: 30px;
+          left: 50px;
+     }
+     .mix-1, .mix-2 {
+          padding: 0 25px;
+     }
+     .mix h2.heading {
+          margin-bottom: 20px !important;
+      }
+      .thumbnail {
+           max-width: 500px;
+           margin: auto;
+           margin-bottom: 30px;
+      }
+}
+@media (max-width: 400px){
+     .banner-info p{
+          display: none;
+     }
+     .banner-info a {
+          margin-top: 15px;
+     }
+}
