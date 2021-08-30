@@ -10,6 +10,9 @@ body {
 .text-capitalize {
      text-transform: capitalize !important;
  }
+ a {
+      text-decoration: none !important;
+ }
 .navbar {
      margin-bottom: 0;
      background-color: #3369e7;
@@ -89,6 +92,9 @@ body {
      border-radius: 0;
      padding: 6px 13px;
 }
+.btn-read:hover {
+     color: white;
+}
 .banner-info {
      position: absolute;
      max-width: 65%;
@@ -140,9 +146,10 @@ p {
      color: #3369e7;
 }
 .skill-icon {
-     margin-top: 30px;
-     font-size: 80px;
+     font-size: 90px;
      display: flex;
+     flex-wrap: wrap;
+     align-items: center;
      justify-content: space-around;
 }
 .skill-icon .html {
@@ -174,6 +181,9 @@ p {
 }
 #contact p {
      font-size: 17px;
+}
+#contact a, p {
+     color: black;
 }
 .move-top {
      position: fixed;
@@ -208,7 +218,7 @@ p {
           margin: 20px 0;
      }
      div.skill-icon {
-          display: none;
+          margin: 35px 10px 0 10px;
      }
      div.skill-progress {
           margin-top: 25px;
@@ -278,6 +288,10 @@ p {
      }
      .mix-1, .mix-2 {
           padding: 0 25px;
+     }
+     div.skill-icon {
+          font-size: 80px;
+          margin: 25px 10px 20px 10px;
      }
      .mix h2.heading {
           margin-bottom: 20px !important;
